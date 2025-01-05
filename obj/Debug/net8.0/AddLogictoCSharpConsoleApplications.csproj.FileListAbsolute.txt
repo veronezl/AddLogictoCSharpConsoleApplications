@@ -12,3 +12,4 @@
 /home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.pdb
 /home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.genruntimeconfig.cache
 /home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/ref/AddLogictoCSharpConsoleApplications.dll
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.sourcelink.json
