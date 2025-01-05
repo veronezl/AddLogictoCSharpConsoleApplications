@@ -1,0 +1,14 @@
+/home/lucas/AddLogictoCSharpConsoleApplications/bin/Debug/net8.0/AddLogictoCSharpConsoleApplications
+/home/lucas/AddLogictoCSharpConsoleApplications/bin/Debug/net8.0/AddLogictoCSharpConsoleApplications.deps.json
+/home/lucas/AddLogictoCSharpConsoleApplications/bin/Debug/net8.0/AddLogictoCSharpConsoleApplications.runtimeconfig.json
+/home/lucas/AddLogictoCSharpConsoleApplications/bin/Debug/net8.0/AddLogictoCSharpConsoleApplications.dll
+/home/lucas/AddLogictoCSharpConsoleApplications/bin/Debug/net8.0/AddLogictoCSharpConsoleApplications.pdb
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.GeneratedMSBuildEditorConfig.editorconfig
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.AssemblyInfoInputs.cache
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.AssemblyInfo.cs
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.csproj.CoreCompileInputs.cache
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.dll
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/refint/AddLogictoCSharpConsoleApplications.dll
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.pdb
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/AddLogictoCSharpConsoleApplications.genruntimeconfig.cache
+/home/lucas/AddLogictoCSharpConsoleApplications/obj/Debug/net8.0/ref/AddLogictoCSharpConsoleApplications.dll
