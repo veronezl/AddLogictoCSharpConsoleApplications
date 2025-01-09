@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AddLogictoCSharpConsoleApplications")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4d1a32362b862295d5e3098375b01b09ee41034")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca07db2436427d500cd3c0fc8cf19e52f5456896")]
 [assembly: System.Reflection.AssemblyProductAttribute("AddLogictoCSharpConsoleApplications")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AddLogictoCSharpConsoleApplications")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -69,7 +69,7 @@ string s2 = "Hello";
 Console.WriteLine(s1 != s2); // output: False
 */
 
-// Operador condicional ----------------------------------------------------------------------
+// Operador condicional ************************************************************************
 
 /*
 int saleAmount = 1001;
