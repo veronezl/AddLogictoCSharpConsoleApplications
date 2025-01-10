@@ -344,3 +344,216 @@ for (int i = 1; i < 101; i++)
         Console.WriteLine($"{i}");
 }
 */
+
+// Adicione lógica de loop ao seu código usando as instruções do-while e while em C#-------------
+
+// Exemplo de do-while
+
+/*
+Random random = new Random();
+int current = 0;
+
+do
+{
+    current = random.Next(1, 11);
+    Console.WriteLine(current);
+} while (current != 7);
+*/
+
+// Exemplo de while
+
+/*
+Random random = new Random();
+int current = random.Next(1, 11);
+
+while (current >= 3)
+{
+    Console.WriteLine(current);
+    current = random.Next(1, 11);
+}
+Console.WriteLine($"Last number: {current}");
+*/
+
+// Usar a instrução continue para passar diretamente para a expressão booliana -------------
+
+/*
+Random random = new Random();
+int current = random.Next(1, 11);
+
+do
+{
+    current = random.Next(1, 11);
+
+    if (current >= 8) continue;
+
+    Console.WriteLine(current);
+} while (current != 7);
+
+/*
+if (current >= 8) continue;
+Como nosso código que escreve o valor de current no console está localizado após o 
+if (current >= 8) continue;, o código garante que um valor de current que seja 
+maior ou igual a 8 jamais será escrito na janela de saída.
+*/
+
+// Desafio de código – Escrever um código para implementar as regras de jogo ------------------
+
+/*
+int hero = 10;
+int monster = 10;
+
+Random dice = new Random();
+
+do 
+{
+    int roll = dice.Next(1,11);
+    monster -= roll;
+    Console.WriteLine($"Monster was damaged and lost {roll} health and now has {monster} health.");
+
+    if (monster <= 0) continue;
+
+    roll = dice.Next(1, 11);
+    hero -= roll;
+    Console.WriteLine($"Hero was damaged and lost {roll} health and now has {hero} health");
+
+}  while (hero > 0 && monster > 0);
+
+Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins!");
+*/
+
+// Gerencie a entrada do usuário durante esse desafio -------------------------------------------
+
+/*
+Ao usar uma instrução Console.ReadLine() para obter a entrada do usuário, é prática comum 
+utilizar uma cadeia de caracteres do tipo anulável (designada string?) para a variável 
+de entrada e, em seguida, avaliar o valor inserido pelo usuário. O código de exemplo 
+a seguir utiliza uma cadeia de caracteres do tipo anulável para capturar a entrada 
+do usuário. A iteração continuará enquanto o valor fornecido pelo usuário for nulo:
+*/
+
+/*
+string? readResult;
+Console.WriteLine("Enter a string:");
+do
+{
+    readResult = Console.ReadLine();
+} while (readResult == null);
+*/
+
+// Exemplo de pedir pelo menos três caracteres --------------------------------------------------
+
+/*
+string? readResult;
+bool validEntry = false;
+Console.WriteLine("Enter a string containing at least three characters:");
+do
+{
+    readResult = Console.ReadLine();
+    if (readResult != null)
+    {
+        if (readResult.Length >= 3)
+        {
+            validEntry = true;
+        }
+        else
+        {
+            Console.WriteLine("Your input is invalid, please try again.");
+        }
+    }
+} while (validEntry == false);
+*/
+
+/*
+O método int.TryParse() pode ser utilizado para converter um valor de cadeia de caracteres
+ em um número inteiro. O método utiliza dois parâmetros, uma cadeia de caracteres que será 
+ avaliada e o nome de uma variável inteira à qual será atribuído um valor. O método retorna 
+ um valor Booliano. O código de exemplo a seguir demonstra o uso do método int.TryParse():
+ */
+
+// capture user input in a string variable named readResult
+
+/*
+string? readResult = "7";
+int numericValue = 0;
+bool validNumber = false;
+
+validNumber = int.TryParse(readResult, out numericValue);
+Console.WriteLine($"The number is {numericValue} and it is valid: {validNumber}");
+*/
+
+// Projeto de código 1 – escrever o código que valida a entrada de inteiro ------------------------
+
+// Exemplo que tentei fazer, melhor solução abaixo
+/*
+string? readResult;
+bool valorEntrada = false;
+int valorInteiro = 0;
+
+Console.WriteLine("Entre com um número de 5 e 10");
+
+do 
+{
+    readResult = Console.ReadLine();
+
+    // Tenta converter a entrada para inteiro
+    valorEntrada = int.TryParse(readResult, out valorInteiro);
+
+    if (!valorEntrada)
+    {
+        Console.WriteLine("Desculpe, você digitou um número inválido. Por favor, tente novamente.");
+    }  
+    else if (valorInteiro >= 5 && valorInteiro <= 10)
+    {
+        Console.WriteLine($"Seu valor de entrada ({valorInteiro}) foi aceito.");
+        break; // Sai do loop após entrada válida
+    }
+    else
+    {
+        Console.WriteLine($"Sua entrada foi {valorInteiro}. Por favor, entre com um número entre 5 e 10.");
+    }
+
+} while (true);
+*/
+
+// Melhor resolução *********************------------------------
+
+string? readResult;
+bool isValid = false;
+int parsedNumber = 0;
+
+Console.WriteLine("Enter an integer value between 5 and 10.");
+
+while (!isValid)
+{
+    readResult = Console.ReadLine();
+    
+    // Verificar se readResult é nulo
+    if (readResult == null)
+    {
+        Console.WriteLine("Entrada inválida: nenhuma entrada fornecida.");
+        continue; // Volta ao início do loop
+    }
+
+    // Tentar converter para número
+    if (int.TryParse(readResult, out parsedNumber))
+    {
+        // Validar intervalo
+        if (parsedNumber >= 5 && parsedNumber <= 10)
+        {
+            Console.WriteLine($"Your input value ({parsedNumber}) has been accepted.");
+            isValid = true; // Encerrar o loop
+        }
+        else
+        {
+            Console.WriteLine($"You entered {parsedNumber}. Please enter a number between 5 and 10.");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Sorry, you entered an invalid number. Please try again.");
+    }
+}
+
+// Projeto de código 2 – escrever o código que valida a entrada de cadeia de caracteres ----------
+
+
