@@ -517,6 +517,7 @@ do
 
 // Melhor resolução *********************------------------------
 
+/*
 string? readResult;
 bool isValid = false;
 int parsedNumber = 0;
@@ -553,7 +554,43 @@ while (!isValid)
         Console.WriteLine("Sorry, you entered an invalid number. Please try again.");
     }
 }
+*/
 
 // Projeto de código 2 – escrever o código que valida a entrada de cadeia de caracteres ----------
 
+/*  
+Console.WriteLine("Entre com sua função: Administrador, Gerente ou Usuário");
+
+string? funcao;
+bool isValid = false;
+
+do
+{
+    // Lê a entrada do usuário
+    funcao = Console.ReadLine();
+
+    if (funcao == null)
+    {
+        Console.WriteLine("Entrada inválida. Por favor, insira novamente.");
+        continue; // Reinicia o loop
+    }
+
+    // Aplica Trim() e ToLower() para padronizar a entrada
+    funcao = funcao.Trim().ToLower();
+
+    // Verifica se o valor está entre as opções válidas
+    if (funcao == "administrador" || funcao == "gerente" || funcao == "usuário")
+    {
+        Console.WriteLine($"Seu valor de entrada ('{funcao}') foi aceito.");
+        isValid = true; // Sai do loop
+    }
+    else
+    {
+        Console.WriteLine($"O nome da função que você inseriu ('{funcao}') não é válido. Insira o nome da sua função (Administrador, Gerente ou Usuário).");
+    }
+
+} while (!isValid); // Continua o loop enquanto a entrada não for válida
+*/
+
+// Projeto de código 3: escreva um código que processe o conteúdo de uma matriz de caracteres-----
 
